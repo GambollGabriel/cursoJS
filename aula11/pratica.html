@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>identificador de estrangeiro</title>
+</head>
+<body>
+    <h1>sistema de dentificador de estrangeiro </h1>
+     você é  de qual pais   ? </br>
+     <input type="text" neme="txtvel" id="txtvel"> 
+     <input type="button" value="verificar" onclick="comparar()">
+    <div id="res">
+
+    </div>
+     <script>
+         function comparar(){
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = (txtv.value)
+            res.innertext=`vc mora no ${'vel'} então vc é`    
+               if(vel == 'brasil') {
+            res.innerHTML +='<p>você é brasileiro</p>'
+              }else{
+            res.innerHTML +='<p>você é estranseiro , então vc mora no brasil .</p>'
+                 }
+        }
+     </script>
+</body>
+</html>                
